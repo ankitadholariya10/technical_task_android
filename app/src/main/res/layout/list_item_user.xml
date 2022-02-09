@@ -15,45 +15,81 @@
         android:layout_marginEnd="@dimen/_10sdp"
         android:background="?attr/selectableItemBackground"
         android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_15sdp"
+        >
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/txt_black_small"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Name: " />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/name"
-            style="@style/txt_black_small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:ellipsize="end"
-            android:gravity="start"
-            android:lines="1"
-            android:text="@{item.name}" />
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/email"
             style="@style/txt_gray_small"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_2sdp"
-            android:ellipsize="end"
             android:gravity="start"
             android:lines="1"
-            android:text="@{item.email}" />
+            android:textStyle="bold"
+            android:text="@{item.name}" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_2sdp"
+            >
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/txt_black_small"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Email: " />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/email"
+                style="@style/txt_gray_small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:lines="1"
+                android:layout_weight="0.8"
+                android:text="@{item.email}" />
+
+        </LinearLayout>
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
             android:orientation="horizontal">
 
             <com.google.android.material.textview.MaterialTextView
-                style="@style/txt_gray_small"
-                android:layout_width="wrap_content"
+                style="@style/txt_black_small"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
                 android:layout_height="wrap_content"
                 android:gravity="start"
-                android:text="Created Before " />
+                android:text="Created At " />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/createdAt"
                 style="@style/txt_gray_small"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
                 android:layout_height="wrap_content"
                 android:gravity="start"
                 android:lines="1"

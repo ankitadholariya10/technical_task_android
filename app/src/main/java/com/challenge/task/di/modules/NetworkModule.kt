@@ -10,7 +10,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import com.challenge.task.BuildConfig
-import com.challenge.task.data.network.api.UserApiService
+import com.challenge.task.data.network.api.ApiService
 import com.challenge.task.data.network.auth.NetworkConnectionInterceptor
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
@@ -22,10 +22,10 @@ class NetworkModule {
     @Provides
     fun provideApiService(
         retrofitBuilder: Retrofit.Builder,
-    ): UserApiService {
+    ): ApiService {
         return retrofitBuilder.baseUrl(BASE_URL)
             .build()
-            .create(UserApiService::class.java)
+            .create(ApiService::class.java)
     }
 
     @Provides

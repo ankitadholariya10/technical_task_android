@@ -8,7 +8,7 @@ import retrofit2.http.Path
 import retrofit2.http.Query
 import com.challenge.task.data.network.entities.UsersResponse
 
-interface UserApiService {
+interface ApiService {
 
     @GET("users/")
     suspend fun getUsers(@Query("page") page: Int?): UsersResponse

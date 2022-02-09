@@ -12,7 +12,7 @@ class ViewModelFactory @Inject constructor(
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         val viewModelProvider = viewModels[modelClass]
-            ?: throw IllegalArgumentException("View model class $modelClass not found. Add binding to \"ViewModelModule\"")
+            ?: throw IllegalArgumentException("Class $modelClass not found. Add binding to \"ViewModelModule\"")
         return viewModelProvider.get() as T
     }
 }

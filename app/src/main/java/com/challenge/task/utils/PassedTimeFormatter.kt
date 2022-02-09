@@ -7,7 +7,8 @@ fun formatPassedTime(time: Long): String {
     val seconds = timePassed / millisInSecond
     val minutes = timePassed / millisInMinute
     return when {
-        minutes <= 0 -> "${seconds}s"
-        else -> "${minutes}m"
+        minutes <= 0 -> "${seconds} Second"
+
+        else -> "${minutes} Minute"
     }
 }
