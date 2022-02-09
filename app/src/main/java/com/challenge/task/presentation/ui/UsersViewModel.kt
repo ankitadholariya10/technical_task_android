@@ -1,6 +1,8 @@
 package com.challenge.task.presentation.ui
 
+import android.content.Context
 import androidx.lifecycle.viewModelScope
+import com.challenge.task.R
 import com.github.ajalt.timberkt.Timber
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -27,6 +29,7 @@ import javax.inject.Inject
 
 @OptIn(ExperimentalCoroutinesApi::class)
 class UsersViewModel @Inject constructor(
+    private val context: Context,
     private val interactor: UserInteractor,
     private val userListChangedEventBus: UserListChangedEventBus
 ) : BaseViewModel() {
@@ -41,7 +44,7 @@ class UsersViewModel @Inject constructor(
         .map { users -> users.map { mapToUiEntity(it) } }
         .catch {
             // TODO improve error handling
-            Timber.e(it) { "Error while loading users" }
+            Timber.e(it) { context.getString(R.string.loading_error) }
             _isUsersLoading.value = false
             _isErrorOccurred.value = true
         }
@@ -71,7 +74,7 @@ class UsersViewModel @Inject constructor(
         userIdToDelete?.let { userId ->
             viewModelScope.launch(createErrorHandler()) {
                 interactor.deleteUser(userId)
-                showToast("User has been deleted")
+                showToast(context.getString(R.string.user_delete))
                 userListChangedEventBus.notifyUserListChanged()
             }
         }
@@ -84,8 +87,8 @@ class UsersViewModel @Inject constructor(
     // TODO extract stings to resources
     private fun createErrorHandler(): CoroutineExceptionHandler {
         return CoroutineExceptionHandler { _, err ->
-            Timber.e(err) { "Error occurred while deleting user" }
-            showToast("Something went wrong")
+            Timber.e(err) { context.getString(R.string.error_delete) }
+            showToast(context.getString(R.string.error_message))
         }
     }
 

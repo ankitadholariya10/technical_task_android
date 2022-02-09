@@ -9,4 +9,8 @@
     <string name="yes">Yes</string>
     <string name="cancel">Cancel</string>
     <string name="error_occurred_text">Error occurred while loading users</string>
+    <string name="user_delete">User has been deleted</string>
+    <string name="error_delete">Error occurred while deleting user</string>
+    <string name="error_message">Something went wrong.Please Try Later!</string>
+    <string name="loading_error">Error while loading users!</string>
 </resources>
