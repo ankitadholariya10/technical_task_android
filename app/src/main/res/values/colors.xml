@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#030303</color>
+    <color name="colorPrimaryDark">#030303</color>
+    <color name="colorAccent">#1A8BB9</color>
+    <color name="secondery_accent">#3DB2E3</color>
+
+    <color name="black">#FF000000</color>
+    <color name="gray">#d0505050</color>
+
+    <color name="skeleton">#25000000</color>
+</resources>
