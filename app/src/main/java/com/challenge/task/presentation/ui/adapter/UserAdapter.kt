@@ -1,9 +1,9 @@
-package com.challenge.task.presentation.user.ui.adapter
+package com.challenge.task.presentation.ui.adapter
 
 import android.view.LayoutInflater
 import androidx.recyclerview.widget.DiffUtil
 import com.challenge.task.databinding.ListItemUserBinding
-import com.challenge.task.presentation.user.ui.entity.UserUiEntity
+import com.challenge.task.presentation.ui.entity.UserUiEntity
 import com.challenge.task.utils.ListAdapter
 
 class UserAdapter(

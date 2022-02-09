@@ -1,4 +1,4 @@
-package com.challenge.task.presentation.user.ui
+package com.challenge.task.presentation.ui
 
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.CoroutineExceptionHandler
@@ -8,8 +8,8 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
-import com.challenge.task.presentation.user.domain.UserInteractor
-import com.challenge.task.presentation.user.ui.bus.UserListChangedEventBus
+import com.challenge.task.presentation.domain.UserInteractor
+import com.challenge.task.presentation.ui.bus.UserListChangedEventBus
 import com.challenge.task.utils.BaseViewModel
 import com.challenge.task.utils.Event
 import com.challenge.task.utils.showToast

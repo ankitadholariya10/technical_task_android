@@ -1,6 +1,6 @@
 package com.challenge.task.factory
 
-import com.challenge.task.presentation.user.domain.entity.User
+import com.challenge.task.presentation.domain.entity.User
 
 object UserFactory {
 

@@ -1,4 +1,4 @@
-package com.challenge.task.presentation.user.ui
+package com.challenge.task.presentation.ui
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import io.kotest.matchers.shouldBe
@@ -15,9 +15,9 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import com.challenge.task.factory.UserFactory
-import com.challenge.task.presentation.user.domain.UserInteractor
-import com.challenge.task.presentation.user.ui.bus.UserListChangedEventBus
-import com.challenge.task.presentation.user.ui.entity.UserUiEntity
+import com.challenge.task.presentation.domain.UserInteractor
+import com.challenge.task.presentation.ui.bus.UserListChangedEventBus
+import com.challenge.task.presentation.ui.entity.UserUiEntity
 import com.challenge.task.utils.MainDispatcherInitializerRule
 
 @OptIn(ExperimentalCoroutinesApi::class)

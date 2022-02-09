@@ -1,4 +1,4 @@
-package com.challenge.task.presentation.user.ui.bus
+package com.challenge.task.presentation.ui.bus
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow

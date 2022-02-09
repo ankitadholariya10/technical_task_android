@@ -1,4 +1,4 @@
-package com.challenge.task.presentation.user.ui.entity
+package com.challenge.task.presentation.ui.entity
 
 data class UserUiEntity(
     val id: Long,

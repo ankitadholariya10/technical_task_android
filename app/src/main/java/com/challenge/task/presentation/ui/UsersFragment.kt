@@ -1,4 +1,4 @@
-package com.challenge.task.presentation.user.ui
+package com.challenge.task.presentation.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import androidx.fragment.app.viewModels
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.challenge.task.R
 import com.challenge.task.databinding.FragmentUsersBinding
-import com.challenge.task.presentation.user.ui.adapter.UserAdapter
+import com.challenge.task.presentation.ui.adapter.UserAdapter
 import com.challenge.task.utils.ViewModelFactory
 import com.challenge.task.utils.appComponent
 import com.challenge.task.utils.observe

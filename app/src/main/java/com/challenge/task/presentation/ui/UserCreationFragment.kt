@@ -1,4 +1,4 @@
-package com.challenge.task.presentation.user.ui
+package com.challenge.task.presentation.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater

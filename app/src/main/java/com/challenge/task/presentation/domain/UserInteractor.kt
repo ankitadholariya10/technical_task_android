@@ -1,6 +1,6 @@
-package com.challenge.task.presentation.user.domain
+package com.challenge.task.presentation.domain
 
-import com.challenge.task.presentation.user.domain.entity.User
+import com.challenge.task.presentation.domain.entity.User
 import javax.inject.Inject
 
 class UserInteractor @Inject constructor(

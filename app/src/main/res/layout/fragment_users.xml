@@ -5,7 +5,7 @@
 
         <variable
             name="vm"
-            type="com.challenge.task.presentation.user.ui.UsersViewModel" />
+            type="com.challenge.task.presentation.ui.UsersViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"

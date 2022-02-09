@@ -5,7 +5,7 @@
 
         <variable
             name="item"
-            type="com.challenge.task.presentation.user.ui.entity.UserUiEntity" />
+            type="com.challenge.task.presentation.ui.entity.UserUiEntity" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

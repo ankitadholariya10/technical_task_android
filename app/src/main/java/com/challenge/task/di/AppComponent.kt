@@ -4,8 +4,8 @@ import com.challenge.task.di.modules.AppModule
 import com.challenge.task.di.modules.NetworkModule
 import com.challenge.task.di.modules.ViewModelModule
 import dagger.Component
-import com.challenge.task.presentation.user.ui.UserCreationFragment
-import com.challenge.task.presentation.user.ui.UsersFragment
+import com.challenge.task.presentation.ui.UserCreationFragment
+import com.challenge.task.presentation.ui.UsersFragment
 import javax.inject.Singleton
 
 @Singleton

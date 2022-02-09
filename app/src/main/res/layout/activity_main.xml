@@ -7,7 +7,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment"
-        android:name="com.challenge.task.presentation.user.ui.UsersFragment"
+        android:name="com.challenge.task.presentation.ui.UsersFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </FrameLayout>

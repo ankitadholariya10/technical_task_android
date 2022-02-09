@@ -1,4 +1,4 @@
-package com.challenge.task.presentation.user.ui
+package com.challenge.task.presentation.ui
 
 import androidx.lifecycle.viewModelScope
 import com.github.ajalt.timberkt.Timber
@@ -14,10 +14,10 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.launch
-import com.challenge.task.presentation.user.domain.UserInteractor
-import com.challenge.task.presentation.user.domain.entity.User
-import com.challenge.task.presentation.user.ui.bus.UserListChangedEventBus
-import com.challenge.task.presentation.user.ui.entity.UserUiEntity
+import com.challenge.task.presentation.domain.UserInteractor
+import com.challenge.task.presentation.domain.entity.User
+import com.challenge.task.presentation.ui.bus.UserListChangedEventBus
+import com.challenge.task.presentation.ui.entity.UserUiEntity
 import com.challenge.task.utils.BaseViewModel
 import com.challenge.task.utils.Event
 import com.challenge.task.utils.formatPassedTime

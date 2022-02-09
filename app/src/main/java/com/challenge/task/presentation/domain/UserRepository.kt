@@ -1,4 +1,4 @@
-package com.challenge.task.presentation.user.domain
+package com.challenge.task.presentation.domain
 
 import android.util.Log
 import kotlinx.coroutines.Dispatchers

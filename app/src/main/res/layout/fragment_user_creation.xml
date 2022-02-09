@@ -7,7 +7,7 @@
 
         <variable
             name="vm"
-            type="com.challenge.task.presentation.user.ui.UserCreationViewModel" />
+            type="com.challenge.task.presentation.ui.UserCreationViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -5,8 +5,8 @@ import dagger.Binds
 import dagger.MapKey
 import dagger.Module
 import dagger.multibindings.IntoMap
-import com.challenge.task.presentation.user.ui.UserCreationViewModel
-import com.challenge.task.presentation.user.ui.UsersViewModel
+import com.challenge.task.presentation.ui.UserCreationViewModel
+import com.challenge.task.presentation.ui.UsersViewModel
 import kotlin.reflect.KClass
 
 @Module
